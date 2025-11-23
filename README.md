@@ -1,132 +1,136 @@
-RekiSe Marine – UI Automation Framework
-Selenium + TestNG | Page Object Model | Mock UI Testing
+# RekiSe Marine -- UI Automation Framework
 
-This project is created as part of the RekiSe Marine – UI Test Engineer Assessment.
-It includes a complete automation framework built using Selenium WebDriver, TestNG, and Page Object Model (POM).
-A mock HTML dashboard simulates three vessels, their status, mission details, and a Return-to-Base API trigger.
+### Selenium + TestNG \| Page Object Model \| Mock UI Testing
 
- Project Structure
-rekise-ui-automation/
-│
-├── README.md
-├── test_plan.md
-├── testng.xml
-│
-├── src
-│   └── test
-│       └── java
-│           └── com.reksise
-│               ├── base
-│               │   └── BaseTest.java
-│               ├── pages
-│               │   ├── DashboardPage.java
-│               │   └── ModalPage.java
-│               └── tests
-│                   ├── VesselDisplayTest.java
-│                   ├── VesselDetailsTest.java
-│                   └── ReturnToBaseTest.java
-│
-└── resources
-    └── dashboard.html
+This project is created as part of the **RekiSe Marine -- UI Test
+Engineer Assessment**.\
+It includes a complete automation framework built using **Selenium
+WebDriver**, **TestNG**, and the **Page Object Model (POM)**.\
+A mock HTML dashboard simulates three vessels, their status, mission
+details, and a Return-to-Base API trigger.
 
+------------------------------------------------------------------------
 
+## 📁 Project Structure
 
-Automated Test Cases 
+    rekise-ui-automation/
+    │
+    ├── README.md
+    ├── test_plan.md
+    ├── testng.xml
+    │
+    ├── src
+    │   └── test
+    │       └── java
+    │           └── com.reksise
+    │               ├── base
+    │               │   └── BaseTest.java
+    │               ├── pages
+    │               │   ├── DashboardPage.java
+    │               │   └── ModalPage.java
+    │               └── tests
+    │                   ├── VesselDisplayTest.java
+    │                   ├── VesselDetailsTest.java
+    │                   └── ReturnToBaseTest.java
+    │
+    └── resources
+        └── dashboard.html
 
+------------------------------------------------------------------------
 
-Test 1 – Verify All Vessels Appear
+## 🧪 Automated Test Cases
 
-3 vessel cards are displayed
+### ✔ Test 1 -- Verify All Vessels Appear
 
-1 vessel is offline
+-   3 vessel cards are displayed\
+-   1 vessel is offline\
+-   UI shows correct vessel names and status
 
-UI shows correct vessel names and status
+### ✔ Test 2 -- Verify Details Modal
 
+-   Clicking **"Details"** opens a modal\
+-   Mission name matches the vessel\
+-   Sub-systems (**Propulsion & Battery**) show expected values
 
+### ✔ Test 3 -- Verify Return-to-Base API Trigger
 
-Test 2 – Verify Details Modal
+-   Clicking **"Return to Base"** logs:\
+    `"API Simulation: /return-to-base"`\
+-   Uses **browser console log capture** via Selenium
 
-Clicking “Details” opens a modal
+------------------------------------------------------------------------
 
-Mission name matches the vessel
+## ⚙️ Setup Instructions
 
-Sub-systems (Propulsion & Battery) display expected values
+### 1. Install Requirements
 
+-   Java **17 or later**\
+-   Maven\
+-   Chrome browser\
+-   ChromeDriver (**auto-managed via WebDriverManager**)
 
+------------------------------------------------------------------------
 
-Test 3 – Verify Return-to-Base API Trigger
+### 2. Clone the Repository
 
-Clicking the “Return to Base” button logs
-"API Simulation: /return-to-base"
-
-Uses browser console log capture via Selenium
-
-
-
-Setup Instructions
-
-1. Install Requirements
-
-Java 17 or later
-
-Maven
-
-Chrome browser
-
-ChromeDriver (auto-managed via WebDriverManager)
-
-
-2. Clone the Repository
-
-git clone https://github.com/<your-username>/rekise-ui-automation.git
+``` bash
+git clone https://github.com/<user>/rekise-ui-automation.git
 cd rekise-ui-automation
+```
 
-3. Place the Dashboard HTML File
+------------------------------------------------------------------------
 
-Save the provided dashboard.html in:
+### 3. Place the Dashboard HTML File
 
-/resources/dashboard.html
+Save the provided `dashboard.html` in:
 
+    /resources/dashboard.html
 
-4. Install Dependencies
+------------------------------------------------------------------------
+
+### 4. Install Dependencies
+
+``` bash
 mvn clean install
+```
 
+------------------------------------------------------------------------
 
-5. Run Tests
+### 5. Run Tests
 
-Use TestNG XML:
+#### Using TestNG XML
 
+``` bash
 mvn test -DsuiteXmlFile=testng.xml
+```
 
+#### Or run individual tests
 
-Or run individual tests from your IDE.
+from your IDE (IntelliJ / Eclipse).
 
+------------------------------------------------------------------------
 
+## 🏗 Framework Design
 
-Framework Design
+### 🧱 Page Object Model (POM)
 
--Page Object Model
+  Page              Description
+  ----------------- --------------------------------------------
+  `DashboardPage`   Handles vessel cards, details button
+  `ModalPage`       Handles modal interactions, subsystem data
 
-DashboardPage → vessel cards, details button
+------------------------------------------------------------------------
 
-ModalPage → modal interactions, subsystem information
+### 🛠 Base Test Class
 
--Base Test Class
+Handles: - ChromeDriver setup\
+- Implicit waits\
+- Browser teardown
 
-Handles:
+------------------------------------------------------------------------
 
-Chrome setup
+### 🧪 TestNG Integration
 
-Implicit waits
-
-Browser teardown
-
--TestNG
-
-Used for:
-
-Assertions
-
-Test execution
-
-Reporting
+Used for: - Assertions\
+- Test execution flow\
+- Reporting
