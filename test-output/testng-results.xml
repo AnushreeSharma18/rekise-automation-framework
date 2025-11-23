@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-23T13:54:09 IST" name="Default suite" finished-at="2025-11-23T13:54:35 IST" duration-ms="26245">
+    <groups>
+    </groups>
+    <test started-at="2025-11-23T13:54:09 IST" name="Default test" finished-at="2025-11-23T13:54:35 IST" duration-ms="26245">
+      <class name="com.reksise.tests.VesselDetailsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.reksise.tests.VesselDetailsTest@5fe94a96]" started-at="2025-11-23T13:54:09 IST" name="setUp" finished-at="2025-11-23T13:54:11 IST" duration-ms="2459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyVesselDetailsModal()[pri:0, instance:com.reksise.tests.VesselDetailsTest@5fe94a96]" started-at="2025-11-23T13:54:11 IST" name="verifyVesselDetailsModal" finished-at="2025-11-23T13:54:16 IST" duration-ms="4312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyVesselDetailsModal -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.reksise.tests.VesselDetailsTest@5fe94a96]" started-at="2025-11-23T13:54:16 IST" name="tearDown" finished-at="2025-11-23T13:54:16 IST" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.reksise.tests.VesselDetailsTest -->
+      <class name="com.reksise.tests.VesselDisplayTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.reksise.tests.VesselDisplayTest@217ed35e]" started-at="2025-11-23T13:54:16 IST" name="setUp" finished-at="2025-11-23T13:54:17 IST" duration-ms="1331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAllVesselsDisplayed()[pri:0, instance:com.reksise.tests.VesselDisplayTest@217ed35e]" started-at="2025-11-23T13:54:17 IST" name="verifyAllVesselsDisplayed" finished-at="2025-11-23T13:54:22 IST" duration-ms="4266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllVesselsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.reksise.tests.VesselDisplayTest@217ed35e]" started-at="2025-11-23T13:54:22 IST" name="tearDown" finished-at="2025-11-23T13:54:22 IST" duration-ms="385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.reksise.tests.VesselDisplayTest -->
+      <class name="com.reksise.tests.ReturnToBaseTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.reksise.tests.ReturnToBaseTest@7dcf94f8]" started-at="2025-11-23T13:54:22 IST" name="setUp" finished-at="2025-11-23T13:54:28 IST" duration-ms="5827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyReturnToBaseAPI()[pri:0, instance:com.reksise.tests.ReturnToBaseTest@7dcf94f8]" started-at="2025-11-23T13:54:28 IST" name="verifyReturnToBaseAPI" finished-at="2025-11-23T13:54:35 IST" duration-ms="6896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReturnToBaseAPI -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.reksise.tests.ReturnToBaseTest@7dcf94f8]" started-at="2025-11-23T13:54:35 IST" name="tearDown" finished-at="2025-11-23T13:54:35 IST" duration-ms="297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.reksise.tests.ReturnToBaseTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

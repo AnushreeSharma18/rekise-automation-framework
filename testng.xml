@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RekiseSuite">
+    <test name="RekiseTests">
+        <classes>
+            <class name="com.reksise.tests.VesselDisplayTest"/>
+            <class name="com.reksise.tests.VesselDetailsTest"/>
+            <class name="com.reksise.tests.ReturnToBaseTest"/>
+        </classes>
+    </test>
+</suite>
