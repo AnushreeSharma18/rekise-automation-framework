@@ -1,0 +1,10 @@
+| **Test Objective**                                                         | **Test Type**            | **Automatable?** | **Why It Adds Value**                                                       |
+| -------------------------------------------------------------------------- | ------------------------ | ---------------- | --------------------------------------------------------------------------- |
+| **1. Ensure live sensor values update automatically without page refresh** | Functional / Integration | Yes              | Confirms that real-time data from vessels is accurately reflected on the UI |
+| **2. Show a low-battery alert when battery drops below threshold**         | Functional               | Yes              | Helps operators take quick action to avoid mission failure                  |
+| **3. Remove the low-battery alert when battery returns to safe range**     | Functional               | Yes              | Prevents confusion caused by old or incorrect alerts                        |
+| **4. Display multiple alerts in a proper list without overlap**            | UI / Functional          | Yes              | Ensures operators can see all active warnings clearly                       |
+| **5. Show “Connection Lost” alert when WebSocket disconnects**             | Negative / Integration   | Yes              | Alerts the operator that live vessel data is no longer reliable             |
+| **6. Highlight the correct vessel when an alert is clicked**               | Functional / UI          | Yes              | Improves navigation and makes issue resolution faster                       |
+| **7. Prevent duplicate alerts from appearing repeatedly**                  | Negative                 | Yes              | Keeps the dashboard clean and avoids alert flooding                         |
+| **8. Display correct alert color coding (Yellow = Warning, Red = Error)**  | UI                       | Yes              | Helps operators instantly identify severity                                 |
